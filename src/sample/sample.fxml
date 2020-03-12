@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TableView fx:id="tableBase" layoutX="14.0" layoutY="14.0" onMouseClicked="#onTableClick" prefHeight="339.0" prefWidth="466.0" AnchorPane.bottomAnchor="53.80000000000001" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="119.60000000000002" AnchorPane.topAnchor="14.0">
+        <columns>
+          <TableColumn fx:id="IDCol" maxWidth="150.0" minWidth="60.0" prefWidth="60.0" text="ID" />
+          <TableColumn fx:id="NAMECol" maxWidth="200.0" prefWidth="180.0" text="NAME" />
+            <TableColumn fx:id="LVLCol" maxWidth="80.0" minWidth="40.0" prefWidth="45.0" text="LVL" />
+            <TableColumn fx:id="CLASSCol" prefWidth="179.99997558593748" text="Class" />
+        </columns>
+      </TableView>
+      <Button fx:id="createButton" layoutX="535.0" layoutY="14.0" mnemonicParsing="false" onAction="#createButtonClicked" text="Create" AnchorPane.rightAnchor="14.600000000000001" AnchorPane.topAnchor="14.0" />
+      <Button fx:id="deleteButton" layoutX="535.0" layoutY="40.0" mnemonicParsing="false" onAction="#deleteButtonClicked" prefHeight="26.0" prefWidth="50.0" text="Delete" AnchorPane.rightAnchor="14.600000000000001" AnchorPane.topAnchor="40.0" />
+      <Button fx:id="loadButton" layoutX="535.0" layoutY="65.0" mnemonicParsing="false" onAction="#loadButtonClicked" prefHeight="26.0" prefWidth="50.0" text="Load" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="65.0" />
+      <Button fx:id="saveButton" layoutX="535.0" layoutY="92.0" mnemonicParsing="false" onAction="#saveButtonClicked" prefHeight="26.0" prefWidth="50.0" text="Save" AnchorPane.rightAnchor="14.600000000000001" AnchorPane.topAnchor="90.0" />
+      <TextField fx:id="IDField" layoutX="14.0" layoutY="352.0" prefHeight="26.0" prefWidth="60.0" AnchorPane.bottomAnchor="28.6" />
+      <Button fx:id="addNoteButton" layoutX="480.0" layoutY="353.0" mnemonicParsing="false" onAction="#addNoteClicked" prefHeight="26.0" prefWidth="111.0" text="Добавить/исправить" AnchorPane.bottomAnchor="25.6" AnchorPane.rightAnchor="8.79999999999994">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <TextField fx:id="NAMEField" layoutX="74.0" layoutY="353.0" prefWidth="180.0" AnchorPane.bottomAnchor="28.6" />
+      <TextField fx:id="LVLField" layoutX="254.0" layoutY="353.0" prefWidth="45.0" AnchorPane.bottomAnchor="28.6" />
+      <TextField fx:id="CLASSField" layoutX="300.0" layoutY="353.0" prefWidth="180.0" AnchorPane.bottomAnchor="28.6" />
+      <Button fx:id="findButton" layoutX="480.0" layoutY="323.0" mnemonicParsing="false" onAction="#findButtonClicked" prefHeight="26.0" prefWidth="111.0" text="Найти" AnchorPane.bottomAnchor="50.6" AnchorPane.rightAnchor="8.79999999999994" />
+      <Button fx:id="resetButton" layoutX="480.0" layoutY="293.0" mnemonicParsing="false" onAction="#resetButtonClicked" text="Собросить поиск" AnchorPane.bottomAnchor="75.6" AnchorPane.rightAnchor="8.79999999999994" />
+      <Button fx:id="deleteNoteButton" layoutX="480.0" layoutY="380.0" mnemonicParsing="false" onAction="#deleteNoteButtonClicked" prefHeight="26.0" prefWidth="111.0" text="Удалить" AnchorPane.bottomAnchor="0.6000000000000014" AnchorPane.rightAnchor="8.799999999999997" />
+   </children>
+</AnchorPane>
